@@ -1,0 +1,42 @@
+{
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "express": "^4.13.4",
+    "superagent": "^1.8.3",
+    "vue": "^1.0.24",
+    "vue-resource": "^0.7.0"
+  },
+  "name": "douban-movie",
+  "version": "1.0.0",
+  "description": "一个模仿豆瓣电影的项目",
+  "main": "douban.js",
+  "devDependencies": {
+    "css-loader": "^0.23.0",
+    "file-loader": "^0.8.5",
+    "jade": "^1.11.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "node-sass": "^3.4.2",
+    "style-loader": "^0.13.0",
+    "template-html-loader": "0.0.3",
+    "url-loader": "^0.5.7",
+    "vue-hot-reload-api": "^1.2.1",
+    "vue-html-loader": "^1.0.0",
+    "vue-loader": "^7.1.4",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bless-L/douban-movies.git"
+  },
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "douban": "node douban.js"
+  },
+
+  "author": "Bless-L",
+  "license": "MIT"
+}
