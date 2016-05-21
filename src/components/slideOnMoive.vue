@@ -76,8 +76,6 @@ module.exports = {
 			rateStartArray = ['rate-10','rate-9','rate-8','rate-7','rate-6','rate-5','rate-4','rate-3','rate-2','rate-1','rate-0'];
 
 
-			//处理评分数据及隐藏的详情页
-
 
 		return {
 			movieArray: movieArray,
@@ -115,6 +113,7 @@ module.exports = {
 			var res = {},
 				rateStartArray = ['rate-10','rate-9','rate-8','rate-7','rate-6','rate-5','rate-4','rate-3','rate-2','rate-1','rate-0'];
 
+			//处理评分数据及隐藏的详情页
 			for(var i = 0 ; i<data.length; i++){
 				var star = Math.ceil(data[i].rate - 0.1);
 				data[i].rateStar = rateStartArray[10-star];
@@ -214,13 +213,13 @@ module.exports = {
 		}
 	}
 	.s-main{
-		.m-left(@num : 1){margin-left: (@num * -590px);}
+		.m-left(@num : 1){margin-left: (@num * -590px + 590px);}
 		.m-1{.m-left(1)}.m-2{.m-left(2)}.m-3{.m-left(3)}.m-4{.m-left(4)}.m-5{.m-left(5)}.m-6{.m-left(6)}.m-7{.m-left(7)}
 		width: 590px;
-		text-align: center;
 		overflow: hidden;
 		.s-container{width: 4720px;	transition: margin-left 1s ease;}
 		.s-sub-movie{
+			text-align: center;
 			vertical-align: text-top;
 			margin: 0 10px 0 9.5px;
 			display: inline-block;
